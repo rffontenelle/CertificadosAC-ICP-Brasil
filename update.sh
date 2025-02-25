@@ -13,8 +13,8 @@ echo -n 'Downloading hash file... '
 curl -sO -H 'Cache-Control: no-cache' "${URL}/hashsha512.txt"
 echo 'Done'
 NEW_HASH=$(cat hashsha512.txt | cut -d' ' -f1)
-echo "Previous hash: $PREV_HASH"
-echo "Newest hash:   $NEW_HASH"
+echo "Stored hash:  $PREV_HASH"
+echo "Newest hash:  $NEW_HASH"
 if [[ "$NEW_HASH" == "$PREV_HASH" ]]; then
     echo 'Checksums are identical, no action required.'
     exit
