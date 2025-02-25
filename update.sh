@@ -8,39 +8,49 @@ IFS=$'\n\t'
 TODAY=$(date +'%Y%m%d')
 URL='http://acraiz.icpbrasil.gov.br/credenciadas/CertificadosAC-ICP-Brasil'
 
-echo 'Downloading hash file...'
+PREV_HASH=$(cat hashsha512.txt | cut -d' ' -f1)
+echo -n 'Downloading hash file... '
 curl -sO -H 'Cache-Control: no-cache' "${URL}/hashsha512.txt"
-sleep 1
-if [[ "$(git diff hashsha512.txt)" == "" ]]; then
-    echo 'No changes in the checksum file. Quitting.'
+echo 'Done'
+NEW_HASH=$(cat hashsha512.txt | cut -d' ' -f1)
+echo "Previous hash: $PREV_HASH"
+echo "Newest hash:   $NEW_HASH"
+if [[ "$NEW_HASH" == "$PREV_HASH" ]]; then
+    echo 'Checksums are identical, no action required.'
     exit
 fi
 
-echo 'Fetching CA certificate chain...'
+echo -n 'Fetching CA certificate chain... '
 curl -sO "${URL}/ACcompactado.zip"
+echo 'Done'
 
+echo -n "Checking stored checksum against downloaded file... "
 sha512sum -c hashsha512.txt
 rm certs/*
 
-echo 'Extracting zip file...'
+echo -n 'Extracting zip file... '
 unzip -q ACcompactado.zip -d certs
-chmod 644 certs/*
+echo 'Done'
 
-echo 'Commiting updates...'
+echo -n 'Changing file permissions to 644... '
+chmod 644 certs/*
+echo 'Done'
+
+echo 'Doing git-rm of obsolete and git-add of new/updated... '
 Added=$(git ls-files --others --exclude-standard certs/)
 Deleted=$(git diff --name-only --diff-filter=D certs/)
 Changed=$(git diff --name-only --diff-filter=C certs/)
 Moved=$(git diff --name-only --diff-filter=M certs/)
-
 echo $Deleted | xargs -r git rm
 echo $Added $Changed $Moved | xargs -r git add
+echo 'Done'
 
-git add certs/
 if git diff-index --cached --quiet HEAD; then
     echo 'ERROR: Nothing to commit, and that is unexpected.'
     exit 1
 else
-    # Format the message for commit and changelog
+    # Format the commit message
+    rm -f message.txt
     touch message.txt
     echo "Update to ${TODAY}" > message.txt
     echo "" >> message.txt
@@ -54,11 +64,19 @@ else
       fi
     done
 
-    # Store the message in changelog
+    # Store the same commit message in the changelog file
     echo -e "----\n" >> CHANGELOG.md
     echo -n "## " >> CHANGELOG.md
     cat message.txt >> CHANGELOG.md
 
     git add hashsha512.txt CHANGELOG.md
-    git commit --dry-run -F message.txt
+
+    # Do not actually commit on Pull Requests, allowing to test this script
+    set +u
+    dry_run=''
+    if [[ "$GITHUB_EVENT_NAME" == 'pull_request' ]]; then
+      dry_run='--dry-run'
+    fi
+
+    git commit $dry_run -F message.txt
 fi
