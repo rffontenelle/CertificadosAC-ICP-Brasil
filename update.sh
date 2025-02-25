@@ -36,7 +36,7 @@ echo -n 'Changing file permissions to 644... '
 chmod 644 certs/*
 echo 'Done'
 
-echo 'Doing git-rm of obsolete and git-add of new/updated... '
+echo -n 'Doing git-rm of obsolete and git-add of new/updated... '
 Added=$(git ls-files --others --exclude-standard certs/)
 Deleted=$(git diff --name-only --diff-filter=D certs/)
 Changed=$(git diff --name-only --diff-filter=C certs/)
