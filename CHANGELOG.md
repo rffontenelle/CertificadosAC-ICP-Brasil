@@ -26,3 +26,15 @@
   - certs/Autoridade_Certificadora_da_Presidencia_da_Republica_v3.crt
   - certs/Autoridade_Certificadora_da_Presidencia_da_Republica_v4.crt
 
+----
+
+## Update to 20250325
+
+- Deleted:
+  - certs/AC-MRE-V1.crt
+  - certs/AC_MRE.crt
+  - certs/Autoridade_Certificadora_da_Presidencia_da_Republica_v3.crt
+  - certs/Autoridade_Certificadora_da_Presidencia_da_Republica_v4.crt
+  - certs/ICP-Brasilv13.crt
+  - certs/ICP-Brasilv4.crt
+
