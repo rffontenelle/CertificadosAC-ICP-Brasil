@@ -38,3 +38,10 @@
   - certs/ICP-Brasilv13.crt
   - certs/ICP-Brasilv4.crt
 
+----
+
+## Update to 20250522
+
+- Added:
+  - certs/AC_VALID_V12.crt
+
