@@ -45,3 +45,10 @@
 - Added:
   - certs/AC_VALID_V12.crt
 
+----
+
+## Update to 20250528
+
+- Added:
+  - certs/AC_JUS_v6.crt
+
