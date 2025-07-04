@@ -52,3 +52,13 @@
 - Added:
   - certs/AC_JUS_v6.crt
 
+----
+
+## Update to 20250704
+
+- Deleted:
+  - certs/AC-SERASA-SSL-EV-V2.crt
+  - certs/AC-SERASA-SSL-EV-V3.crt
+  - certs/AC-SERASA-SSL-EV-V4.crt
+  - certs/AC-VALID-CODE-SIGNING.crt
+
