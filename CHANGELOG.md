@@ -62,3 +62,11 @@
   - certs/AC-SERASA-SSL-EV-V4.crt
   - certs/AC-VALID-CODE-SIGNING.crt
 
+----
+
+## Update to 20250801
+
+- Deleted:
+  - certs/AC_META_CERTIFICADO_DIGITAL_CD.crt
+  - certs/AC_PREMIUM_CERTIFICADORA_DIGITAL_CD.crt
+
