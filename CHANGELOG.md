@@ -70,3 +70,11 @@
   - certs/AC_META_CERTIFICADO_DIGITAL_CD.crt
   - certs/AC_PREMIUM_CERTIFICADORA_DIGITAL_CD.crt
 
+----
+
+## Update to 20250822
+
+- Deleted:
+  - certs/AC_CACB_CD.crt
+  - certs/Serasa_AC_v5.crt
+
