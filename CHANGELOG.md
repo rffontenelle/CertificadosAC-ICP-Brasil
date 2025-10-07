@@ -78,3 +78,10 @@
   - certs/AC_CACB_CD.crt
   - certs/Serasa_AC_v5.crt
 
+----
+
+## Update to 20251007
+
+- Added:
+  - certs/AC_Safeweb_v12.crt
+
