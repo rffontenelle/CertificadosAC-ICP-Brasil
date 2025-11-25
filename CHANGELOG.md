@@ -85,3 +85,12 @@
 - Added:
   - certs/AC_Safeweb_v12.crt
 
+----
+
+## Update to 20251125
+
+- Added:
+  - certs/AC_SAFETECH_RFB_v5.crt
+  - certs/AC_VALID_BRASIL_V12.crt
+  - certs/Autoridade_Certificadora_SERPRO_v5.crt
+
