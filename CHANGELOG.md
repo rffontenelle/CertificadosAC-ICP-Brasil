@@ -94,3 +94,10 @@
   - certs/AC_VALID_BRASIL_V12.crt
   - certs/Autoridade_Certificadora_SERPRO_v5.crt
 
+----
+
+## Update to 20251201
+
+- Added:
+  - certs/Autoridade_Certificadora_FECOMERCIO_MG_RFB.crt
+
