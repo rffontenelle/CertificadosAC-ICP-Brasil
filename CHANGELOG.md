@@ -101,3 +101,10 @@
 - Added:
   - certs/Autoridade_Certificadora_FECOMERCIO_MG_RFB.crt
 
+----
+
+## Update to 20260204
+
+- Added:
+  - certs/AC_Certisign_Multipla_G8.crt
+
