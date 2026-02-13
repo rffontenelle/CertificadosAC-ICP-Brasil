@@ -108,3 +108,10 @@
 - Added:
   - certs/AC_Certisign_Multipla_G8.crt
 
+----
+
+## Update to 20260213
+
+- Deleted:
+  - certs/AC_PLANO_DIGITAL_CD.crt
+
