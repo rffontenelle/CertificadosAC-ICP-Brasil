@@ -115,3 +115,10 @@
 - Deleted:
   - certs/AC_PLANO_DIGITAL_CD.crt
 
+----
+
+## Update to 20260225
+
+- Added:
+  - certs/AC_OAB_G4.crt
+
