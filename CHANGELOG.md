@@ -122,3 +122,10 @@
 - Added:
   - certs/AC_OAB_G4.crt
 
+----
+
+## Update to 20260302
+
+- Added:
+  - certs/AC_DIGITALSIGN_ACP_G3.crt
+
