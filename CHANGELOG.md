@@ -129,3 +129,13 @@
 - Added:
   - certs/AC_DIGITALSIGN_ACP_G3.crt
 
+----
+
+## Update to 20260325
+
+- Added:
+  - certs/AC_CERTISIGN-JUS_G7.crt
+  - certs/AC_SAFEWEB_CD_V12.crt
+  - certs/Autoridade_Certificadora_ZAPSIGN.crt
+  - certs/Autoridade_Certificadora_do_SERPRO_Final_v6.crt
+
