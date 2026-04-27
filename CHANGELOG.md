@@ -139,3 +139,10 @@
   - certs/Autoridade_Certificadora_ZAPSIGN.crt
   - certs/Autoridade_Certificadora_do_SERPRO_Final_v6.crt
 
+----
+
+## Update to 20260427
+
+- Added:
+  - certs/AC_SOLUTI_v12.crt
+
