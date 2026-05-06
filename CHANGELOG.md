@@ -146,3 +146,10 @@
 - Added:
   - certs/AC_SOLUTI_v12.crt
 
+----
+
+## Update to 20260506
+
+- Added:
+  - certs/AC_DIGITALSIGN_G3.crt
+
