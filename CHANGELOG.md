@@ -153,3 +153,10 @@
 - Added:
   - certs/AC_DIGITALSIGN_G3.crt
 
+----
+
+## Update to 20260625
+
+- Added:
+  - certs/AC_Certisign_ICP_Brasil_SSL_G5.crt
+
