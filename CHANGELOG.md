@@ -160,3 +160,10 @@
 - Added:
   - certs/AC_Certisign_ICP_Brasil_SSL_G5.crt
 
+----
+
+## Update to 20260706
+
+- Added:
+  - certs/AC_Certisign_Tempo_G3.crt
+
