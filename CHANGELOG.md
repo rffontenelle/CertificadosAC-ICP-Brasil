@@ -167,3 +167,11 @@
 - Added:
   - certs/AC_Certisign_Tempo_G3.crt
 
+----
+
+## Update to 20260714
+
+- Added:
+  - certs/Autoridade_Certificadora_SDI_v2.crt
+  - certs/Autoridade_Certificadora_SIRIUS.crt
+
