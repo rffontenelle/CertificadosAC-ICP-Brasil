@@ -175,3 +175,13 @@
   - certs/Autoridade_Certificadora_SDI_v2.crt
   - certs/Autoridade_Certificadora_SIRIUS.crt
 
+----
+
+## Update to 20260810
+
+- Added:
+  - certs/AC_Secretaria_da_Receita_Federal_do_Brasil_v5.crt
+  - certs/AC_SyngularID_Multipla_v12.crt
+  - certs/AC_SyngularID_v12.crt
+  - certs/AC_VALID-JUS_v6.crt
+
