@@ -26,10 +26,15 @@ echo 'Done'
 
 echo -n "Checking stored checksum against downloaded file... "
 sha512sum -c hashsha512.txt
-rm certs/*
+rm -rf certs/*
 
 echo -n 'Extracting zip file... '
 unzip -q ACcompactado.zip -d certs
+if [ -d certs/ACcompactado ]; then
+  echo -n 'Moving certs outside "ACcompactado" directory... '
+  chmod +x certs/ACcompactado
+  mv certs/ACcompactado/*.crt certs/
+fi
 echo 'Done'
 
 echo -n 'Changing file permissions to 644... '
