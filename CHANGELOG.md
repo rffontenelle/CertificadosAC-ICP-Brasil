@@ -185,3 +185,13 @@
   - certs/AC_SyngularID_v12.crt
   - certs/AC_VALID-JUS_v6.crt
 
+----
+
+## Update to 20260826
+
+- Added:
+  - certs/AC_SINCOR_G5.crt
+
+- Deleted:
+  - certs/AC_DOCCLOUD.crt
+
