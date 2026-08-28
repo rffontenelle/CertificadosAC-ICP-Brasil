@@ -195,3 +195,13 @@
 - Deleted:
   - certs/AC_DOCCLOUD.crt
 
+- Changed:
+  - Certifidates provided inside 'ACcompactado' directory
+
+----
+
+## Update to 20260828
+
+- Changed:
+  - Certificates no longer provided inside 'ACcompactado' directory
+
