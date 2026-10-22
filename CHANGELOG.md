@@ -205,3 +205,10 @@
 - Changed:
   - Certificates no longer provided inside 'ACcompactado' directory
 
+----
+
+## Update to 20261022
+
+- Added:
+  - certs/AC_SOLUTI-JUS_v6.crt
+
