@@ -212,3 +212,10 @@
 - Added:
   - certs/AC_SOLUTI-JUS_v6.crt
 
+----
+
+## Update to 20261105
+
+- Added:
+  - certs/Autoridade_Certificadora_INFOCOMEX_v2.crt
+
