@@ -219,3 +219,13 @@
 - Added:
   - certs/Autoridade_Certificadora_INFOCOMEX_v2.crt
 
+----
+
+## Update to 20261113
+
+- Added:
+  - certs/AC_SERPRO_AE.crt
+  - certs/AC_SOLUTI_SSL_EV_G5.crt
+  - certs/AC_VALID_AE.crt
+  - certs/Autoridade_Certificadora_PRIMECERT_v2.crt
+
